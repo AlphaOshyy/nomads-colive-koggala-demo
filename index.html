@@ -14,26 +14,126 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="demo-bar">Concept website by DinoNor · Independent design demo</div>
   <header class="nav-wrap">
     <a class="logo" href="#top"><span>NOMADS</span><small>COLIVE KOGGALA</small></a>
-    <button class="menu" aria-label="Open menu">Menu</button>
+    <button class="menu" aria-label="Open menu" aria-expanded="false">Menu</button>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#stay">Stay</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a><a class="nav-cta" href="#plan">Plan your stay</a>
+      <a href="#stay">Stay</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#plan">Plan your stay</a>
     </nav>
   </header>
+
   <main id="top">
-    <section class="hero"><div class="hero-image"></div><div class="hero-content reveal"><p class="eyebrow">Giniwella · Koggala Lake · Southern Sri Lanka</p><h1>Stay close<br>to the lake.</h1><p class="hero-copy">A lakefront place to stay, work remotely and slow down.</p><div class="hero-actions"><a class="button light" href="#plan">Plan your stay</a><a class="text-link" href="#stay">Explore Nomads <span>↓</span></a></div></div><div class="scroll-note">Scroll to explore <span>↓</span></div></section>
-    <section class="intro section reveal"><p class="eyebrow">Coliving · Coworking · Koggala</p><div><h2>A place to stay.<br>A place to work.<br>A place to breathe.</h2><p class="lead">Set beside Koggala Lake, Nomads brings together comfortable rooms, work spaces, fast internet and time outdoors.</p></div></section>
-    <section id="stay" class="feature split section"><div class="feature-image image-room"></div><div class="feature-copy reveal"><p class="eyebrow">01 · Stay</p><h2>Make yourself<br>at home.</h2><p>Comfortable rooms, air conditioning, balconies and a peaceful lake setting. Stay for a short escape or settle in for longer.</p><div class="facts"><span>AC rooms</span><span>Lake access</span><span>Pool</span></div><a class="arrow-link" href="#plan">Ask about a stay <span>↗</span></a></div></section>
-    <section id="work" class="feature split reverse section"><div class="feature-image image-work"></div><div class="feature-copy reveal"><p class="eyebrow">02 · Work</p><h2>Good work<br>needs space.</h2><p>High speed internet, indoor and outdoor work areas and backup power support remote work without leaving the lake.</p><div class="facts"><span>High speed WiFi</span><span>Work areas</span><span>Generator</span></div><a class="arrow-link" href="#plan">Ask about coworking <span>↗</span></a></div></section>
-    <section id="experience" class="experience section"><div class="section-heading reveal"><div><p class="eyebrow">03 · Experience</p><h2>Slow down.<br>Look around.</h2></div><p class="section-side">The lake is part of the stay.</p></div><div class="cards"><article class="card reveal"><div class="card-image lake"></div><span>01</span><h3>Koggala Lake</h3><p>Borrow a kayak and head onto the water when the day opens up.</p></article><article class="card reveal"><div class="card-image pool"></div><span>02</span><h3>Pool days</h3><p>Take a break between work, reading and long afternoons outside.</p></article><article class="card reveal"><div class="card-image food"></div><span>03</span><h3>Good food</h3><p>Enjoy Sri Lankan dishes and Italian inspired favourites at the property.</p></article></div></section>
-    <section class="details section"><div class="details-grid"><div><p class="eyebrow">Why Nomads</p><h2>Everything you need.<br>Less noise.</h2></div><div class="detail-list"><div><strong>01</strong><span>Work calls without leaving the lake.</span></div><div><strong>02</strong><span>Pool, garden and nature around you.</span></div><div><strong>03</strong><span>Bike rental and laundry support.</span></div><div><strong>04</strong><span>A peaceful base close to Ahangama and the south coast.</span></div></div></div></section>
-    <section id="plan" class="plan section reveal"><div><p class="eyebrow">Plan your stay</p><h2>Tell us what<br>you are looking for.</h2><p class="lead">Start a direct enquiry for a stay, coworking, long stay or day pass.</p></div><form id="planForm" class="plan-form"><label>Your name<input id="name" required placeholder="Your name"></label><label>I'm interested in<select id="interest"><option>Staying</option><option>Coworking</option><option>Long stay</option><option>Day pass</option><option>Experience</option></select></label><label>Message<textarea id="message" rows="4" placeholder="Dates, number of guests, or anything else..."></textarea></label><button class="button dark" type="submit">Start WhatsApp enquiry ↗</button></form></section>
-    <section class="location section"><div class="location-copy reveal"><p class="eyebrow">Find us</p><h2>Giniwella,<br>Koggala.</h2><p>Giniwella, Kataluwa Ahangama, Koggala 80630, Sri Lanka.</p><a class="arrow-link" href="https://www.google.com/maps/search/?api=1&query=Nomads%20Colive%20Koggala" target="_blank" rel="noopener">Open in Google Maps <span>↗</span></a></div><div class="map-card"><div class="map-grid"></div><div class="map-pin">N</div><span>KOGGALA LAKE</span></div></section>
-    <section class="closing section reveal"><p class="eyebrow">Koggala, Sri Lanka</p><h2>Leave room<br>for the good days.</h2><a class="button light" href="#plan">Plan your stay</a></section>
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Giniwella · Koggala Lake · Southern Sri Lanka</p>
+        <h1>Stay close<br>to the lake.</h1>
+        <p class="hero-copy">A lakefront place to stay, work remotely and slow down.</p>
+        <div class="hero-actions">
+          <a class="button light" href="#plan">Plan your stay</a>
+          <a class="text-link" href="#stay">Explore Nomads</a>
+        </div>
+      </div>
+      <div class="scroll-note">Scroll to explore</div>
+    </section>
+
+    <section class="intro section reveal">
+      <p class="eyebrow">Coliving · Coworking · Koggala</p>
+      <div>
+        <h2>A place to stay.<br>A place to work.<br>A place to breathe.</h2>
+        <p class="lead">Set beside Koggala Lake, Nomads brings together comfortable rooms, work spaces, fast internet and time outdoors.</p>
+      </div>
+    </section>
+
+    <section id="stay" class="feature split section">
+      <div class="feature-image image-room"></div>
+      <div class="feature-copy reveal">
+        <p class="eyebrow">Stay</p>
+        <h2>Make yourself<br>at home.</h2>
+        <p>Comfortable rooms, air conditioning, balconies and a peaceful lake setting. Stay for a short escape or settle in for longer.</p>
+        <div class="facts"><span>AC rooms</span><span>Lake access</span><span>Pool</span></div>
+        <a class="arrow-link" href="#plan">Ask about a stay</a>
+      </div>
+    </section>
+
+    <section id="work" class="feature split reverse section">
+      <div class="feature-image image-work"></div>
+      <div class="feature-copy reveal">
+        <p class="eyebrow">Work</p>
+        <h2>Good work<br>needs space.</h2>
+        <p>High speed internet, indoor and outdoor work areas and backup power support remote work without leaving the lake.</p>
+        <div class="facts"><span>High speed WiFi</span><span>Work areas</span><span>Generator</span></div>
+        <a class="arrow-link" href="#plan">Ask about coworking</a>
+      </div>
+    </section>
+
+    <section id="experience" class="experience section">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2>Slow down.<br>Look around.</h2>
+        </div>
+        <p class="section-side">The lake is part of the stay.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal"><div class="card-image lake"></div><span>01</span><h3>Koggala Lake</h3><p>Borrow a kayak and head onto the water when the day opens up.</p></article>
+        <article class="card reveal"><div class="card-image pool"></div><span>02</span><h3>Pool days</h3><p>Take a break between work, reading and long afternoons outside.</p></article>
+        <article class="card reveal"><div class="card-image food"></div><span>03</span><h3>Good food</h3><p>Enjoy Sri Lankan dishes and Italian inspired favourites at the property.</p></article>
+      </div>
+    </section>
+
+    <section class="details section">
+      <div class="details-grid">
+        <div><p class="eyebrow">A little more</p><h2>Everything you need.<br>Less noise.</h2></div>
+        <div class="detail-list">
+          <div><strong>01</strong><span>Work calls without leaving the lake.</span></div>
+          <div><strong>02</strong><span>Pool, garden and nature around you.</span></div>
+          <div><strong>03</strong><span>Bike rental and laundry support.</span></div>
+          <div><strong>04</strong><span>A peaceful base close to Ahangama and the south coast.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plan" class="plan section reveal">
+      <div>
+        <p class="eyebrow">Plan your stay</p>
+        <h2>Tell us what<br>you are looking for.</h2>
+        <p class="lead">Start a direct enquiry for a stay, coworking, long stay or day pass.</p>
+      </div>
+      <form id="planForm" class="plan-form">
+        <label>Your name<input id="name" required placeholder="Your name"></label>
+        <label>I'm interested in<select id="interest"><option>Staying</option><option>Coworking</option><option>Long stay</option><option>Day pass</option><option>Experience</option></select></label>
+        <label>Message<textarea id="message" rows="4" placeholder="Dates, number of guests, or anything else..."></textarea></label>
+        <button class="button dark" type="submit">Start WhatsApp enquiry</button>
+      </form>
+    </section>
+
+    <section class="location section">
+      <div class="location-copy reveal">
+        <p class="eyebrow">Find us</p>
+        <h2>Giniwella,<br>Koggala.</h2>
+        <p>Giniwella, Kataluwa Ahangama, Koggala 80630, Sri Lanka.</p>
+        <a class="arrow-link" href="https://www.google.com/maps/search/?api=1&query=Nomads%20Colive%20Koggala" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+      <div class="map-card"><div class="map-grid"></div><div class="map-pin">N</div><span>KOGGALA LAKE</span></div>
+    </section>
+
+    <section class="closing section reveal">
+      <p class="eyebrow">Koggala, Sri Lanka</p>
+      <h2>Leave room<br>for the good days.</h2>
+      <a class="button light" href="#plan">Plan your stay</a>
+    </section>
   </main>
-  <footer id="contact"><div class="footer-brand">NOMADS <small>COLIVE KOGGALA</small></div><div><p>Giniwella, Kataluwa Ahangama, Koggala 80630</p><p>Concept website by DinoNor</p></div><a href="#top">Back to top ↑</a></footer>
+
+  <footer id="contact">
+    <div class="footer-brand">NOMADS <small>COLIVE KOGGALA</small></div>
+    <div><p>Giniwella, Kataluwa Ahangama, Koggala 80630</p><p>Independent concept by NOVA</p></div>
+    <a href="#top">Back to top</a>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
